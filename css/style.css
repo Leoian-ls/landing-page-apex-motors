@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0a0a0a;
+    background: repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 79px,
+        rgba(201, 168, 76, 0.04) 80px
+    ), #0a0a0a;
+    font-family: "bebas neue", sans-serif;
+    font-weight: 300;
+}
+
+a {text-decoration: none;}
+
+.container {
+    width: 93%;
+    margin: 0 auto;
+}
+
+/*======== NAVIGATION ========*/
+header{
+    background: transparent;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.navbar .logo {
+    color: white;
+    letter-spacing: 4px;
+    font-size: 25px;
+    gap: 8px;
+}
+
+.navbar .logo span {
+    color: #c9a84c;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 32px;
+}
+
+.navbar ul li a {
+    color: white;
+    font-family: "barlow", sans-serif;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+.navbar ul li a:hover {
+    color: #c9a84c;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a.btn-fale-conosco {
+    border: 1px solid #7a5f28;
+    color: #c9a84c;
+    transition: color 0.5s ease;
+    padding: 10px 25px;
+}
+
+.navbar ul li a.btn-fale-conosco:hover {
+    border: 1px solid #c9a84c;
+    background-color: #c9a84c;
+    color: black;
+    transition: 0.3s ease;
+    padding: 10px 25px;
+}
+
+/*======== HERO ========*/
+.hero::after {
+    content: 'APEX';
+    position: absolute;
+    right: 5px;
+    bottom: -120px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 380px;
+    color: rgba(201, 168, 76, 0.04);
+    pointer-events: none;
+    user-select: none;
+}
+
+.hero {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    margin-top: -5rem;
+    position: relative;
+}
+
+.hero-text span {
+    color: #c9a84c;
+    font-family: "barlow", sans-serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.hero-text h1 {
+    font-size: clamp(4rem, 9vw, 9rem);
+    line-height: 0.9;
+    letter-spacing: 3px;
+    margin-top: 20px;
+}
+
+.hero-text h1 em{
+    color: #c9a84c;
+}
+
+.hero-text p {
+    font-family: "Barlow", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    width: 600px;
+    margin: 30px 0;
+    line-height: 2;
+}
+
+.hero-btns {
+    margin-top: 10px;
+}
+
+.hero-btns a{
+    display: inline-block;
+    border: 1px solid white;
+    padding: 20px 35px;
+    margin: 0 5px;
+    font-size: 1.1rem;
+    color: white;
+    letter-spacing: 2px;
+    transition: transform 0.5s ease;
+}
+
+.hero-btns a:nth-of-type(1) {
+    color: black;
+    background-color: #c9a84c;
+    border: 1px solid #c9a84c;
+}
+
+.hero-btns a:nth-of-type(1):hover {
+    transform: translateY(-5px);
+    background-color: #F0D06E;
+    transition: 0.5s ease;
+}
+
+.hero-btns a:nth-of-type(2) {
+    color: #c9a84c;
+    border: 1px solid #7a5f28;
+}
+
+.hero-btns a:nth-of-type(2):hover {
+    transform: translateY(-5px);
+    border: 1px solid #F0D06E;
+    transition: 0.5s ease;
+}
+
+@keyframes scrollLine {
+    0%   { opacity: 0; transform: scaleY(0); transform-origin: top; }
+    50%  { opacity: 1; transform: scaleY(1); }
+    100% { opacity: 0; transform: scaleY(1); transform-origin: bottom; }
+}
+
+.hero-scroll {
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+}
+
+.hero-scroll span{
+    display: block;
+    width: 1px;
+    height: 80px;
+    background: linear-gradient(to bottom, transparent, #c9a84c);
+    animation: scrollLine 2s ease infinite;
+}
+
+.hero-badge {
+    position: absolute;
+    bottom: 80px;
+    right: 0px;
+    border: 1px solid #7a5f28;
+    padding: 20px 28px;
+    text-align: center;
+}
+
+.hero-badge strong{
+    display: block;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    color: #c9a84c;
+    line-height: 1;
+}
+
+.hero-badge span {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: #888;
+    text-transform: uppercase;
+}
