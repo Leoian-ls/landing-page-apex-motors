@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /*outline: 1px solid red;*/
 }
 
 html {
@@ -29,7 +30,17 @@ a {text-decoration: none;}
 
 /*======== NAVIGATION ========*/
 header{
-    background: transparent;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: linear-gradient(
+        to bottom,
+        rgba(10, 10, 10, 0.95),
+        transparent
+    );
 }
 
 
@@ -63,11 +74,12 @@ header{
     font-family: "barlow", sans-serif;
     font-size: 14px;
     letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: color 0.3s ease;
 }
 
 .navbar ul li a:hover {
     color: #c9a84c;
-    transition: color 0.3s ease;
 }
 
 .navbar ul li a.btn-fale-conosco {
@@ -85,17 +97,42 @@ header{
     padding: 10px 25px;
 }
 
+button.hamburger {
+    display: none;
+    background-color: #0a0a0a;
+    border-radius: 50%;
+    border: 2px solid #7a5f28;
+    padding: 8px 8px 6px 8px;
+    transition: 0.3s ease;
+}
+
+button.hamburger:hover {
+    background-color: #c9a84c;
+    border: 2px solid #c9a84c;
+    transition: 0.3s ease;
+}
+
+button.hamburger img {
+    width: 30px;
+}
+
+button.hamburger img:hover {
+    filter: brightness(0.2);
+}
+
+
 /*======== HERO ========*/
 .hero::after {
     content: 'APEX';
     position: absolute;
-    right: 5px;
-    bottom: -120px;
+    right: -2%;
+    bottom: -100px;
     font-family: "Bebas Neue", sans-serif;
     font-size: 380px;
     color: rgba(201, 168, 76, 0.04);
     pointer-events: none;
     user-select: none;
+    transition: 1s ease;
 }
 
 .hero {
@@ -105,19 +142,18 @@ header{
     justify-content: center;
     height: 100vh;
     color: white;
-    margin-top: -5rem;
     position: relative;
 }
 
 .hero-text span {
     color: #c9a84c;
     font-family: "barlow", sans-serif;
-    font-size: 13px;
+    font-size: clamp(6px, 3.5vw, 13px);
     letter-spacing: 3px;
 }
 
 .hero-text h1 {
-    font-size: clamp(4rem, 9vw, 9rem);
+    font-size: clamp(2.5rem, 9vw, 9rem);
     line-height: 0.9;
     letter-spacing: 3px;
     margin-top: 20px;
@@ -129,9 +165,9 @@ header{
 
 .hero-text p {
     font-family: "Barlow", sans-serif;
-    font-size: 1rem;
+    font-size: clamp(8px, 4vw, 1rem);
     letter-spacing: 1px;
-    width: 600px;
+    width: clamp(280px, 90%, 600px);
     margin: 30px 0;
     line-height: 2;
 }
@@ -143,9 +179,9 @@ header{
 .hero-btns a{
     display: inline-block;
     border: 1px solid white;
-    padding: 20px 35px;
+    padding: clamp(8px, 2vw, 20px) clamp(12px, 3vw, 35px);
     margin: 0 5px;
-    font-size: 1.1rem;
+    font-size: clamp(0.85rem, 2vw, 1.1rem);
     color: white;
     letter-spacing: 2px;
     transition: transform 0.5s ease;
@@ -183,37 +219,92 @@ header{
 .hero-scroll {
     position: absolute;
     left: 0;
-    bottom: 40px;
+    bottom: 20px;
 }
 
 .hero-scroll span{
     display: block;
     width: 1px;
-    height: 80px;
+    height: 70px;
     background: linear-gradient(to bottom, transparent, #c9a84c);
     animation: scrollLine 2s ease infinite;
 }
 
 .hero-badge {
     position: absolute;
-    bottom: 80px;
+    bottom: clamp(30px, 5vw, 80px);
     right: 0px;
     border: 1px solid #7a5f28;
-    padding: 20px 28px;
+    padding: clamp(12px, 2vw, 20px) clamp(16px, 2.5vw, 28px);
     text-align: center;
 }
 
 .hero-badge strong{
     display: block;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 3rem;
+    font-size: clamp(1.5rem, 3vw, 3rem);
     color: #c9a84c;
     line-height: 1;
 }
 
 .hero-badge span {
-    font-size: 0.75rem;
+    font-size: clamp(0.6rem, 1vw, 0.75rem);
     letter-spacing: 2px;
     color: #888;
     text-transform: uppercase;
+}
+
+/*======== STATS ========*/
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.stats-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 60px;
+}
+
+.stats-item span {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    color: #c9a84c;
+}
+
+.stats-item p {
+    font-family: "barlow", sans-serif;
+    font-size: 0.9rem;
+    color: #888;
+    letter-spacing: 1.5px;
+}
+
+/*======== MEDIAS QUERIES ========*/
+@media (max-width: 768px) {
+    .navbar ul{
+        display: none;
+    }
+
+    button.hamburger {
+        display: block;
+    }
+
+    .hero::after {
+        bottom: -70px;
+        font-size: 280px;
+        transition: 1s ease;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero::after {
+        bottom: -50px;
+        font-size: 180px;
+        transition: 1s ease;
+    }
 }
