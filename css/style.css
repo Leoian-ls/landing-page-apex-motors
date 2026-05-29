@@ -297,7 +297,7 @@ button.hamburger img:hover {
 .models-header span {
     display: block;
     font-family: "Barlow", sans-serif;
-    font-size: 0.75rem;
+    font-size: 15px;
     letter-spacing: 4px;
     color: #c9a84c;
     margin-bottom: 12px;
@@ -318,7 +318,7 @@ button.hamburger img:hover {
 .models-grid {
     display: grid;
     grid-template-columns: 1.4fr 1fr 1fr;
-    gap: 4px;
+    gap: 8px;
     margin-bottom: 60px;
 }
 
@@ -329,7 +329,7 @@ button.hamburger img:hover {
 }
 
 .car-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-10px);
 }
 
 .car-img-wrap {
@@ -344,43 +344,22 @@ button.hamburger img:hover {
     transition: transform 0.6s ease;
 }
 
+.car-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.6s ease;
+}
+
 .card-featured .car-img {
     height: 300px;
 }
 
-.car-card:hover .car-img {
-    transform: scale(1.04);
+.car-img:hover img {
+    transform: scale(1.08);
 }
-
-.car-img-1 {
-    background: linear-gradient(135deg, #1a1208, #2d2010, #0f0a00);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 4rem;
-}
-
-.car-img-1::after { content: '🏎️'; }
-
-.car-img-2 {
-    background: linear-gradient(135deg, #1a0808, #2d1010, #0f0000);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-}
-
-.car-img-2::after { content: '🏎️'; }
-
-.car-img-3 {
-    background: linear-gradient(135deg, #100a1a, #1e1030, #0a0010);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-}
-
-.car-img-3::after { content: '🏎️'; }
 
 .car-badge {
     position: absolute;
@@ -504,15 +483,161 @@ button.hamburger img:hover {
 .models-cta {
     text-align: center;
 }
+/*======== STORY ========*/
+.story {
+    width: 100%;
+    background-color: #1a1a1a;
+    padding: 80px 0 100px 0;
+}
+
+.story-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+}
+
+.story-text {
+    width: 100%;
+}
+
+.story-text span {
+    font-family: "barlow", sans-serif;
+    text-transform: uppercase;
+    color: #c9a84c;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.story-text h2 {
+    color: white;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin: 15px 0 30px;
+}
+
+.story-text em {
+    color: #c9a84c;
+}
+
+.story-text p {
+    text-transform: none;
+    font-family: "barlow", sans-serif;
+    width: 47vw;
+    line-height: 1.7;
+    color: #cccccc;
+}
+
+.story-list {
+    list-style: none;
+    font-size: 15px;
+    font-family: "barlow", sans-serif;
+    line-height: 2.3;
+    margin-top: 40px;
+    color: #cccccc;
+}
+
+.story-visual {
+    position: relative;
+    height: 500px;
+}
+
+.story-visual img {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.story-card-float {
+    position: absolute;
+    bottom: -3rem;
+    left: -3rem;
+    color: black;
+    width: 30%;
+    padding: 10px 0 15px 0;
+    background-color: #c9a84c;
+    text-align: center;
+}
+
+.story-card-float strong {
+    display: block;
+    font-size: clamp(0.5rem, 3vw, 4rem);
+    line-height: 1.5;
+}
+
+.story-card-float span {
+    font-family: "barlow", sans-serif;
+    font-size: clamp( 0.5rem, 0.8vw, 0.75rem);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
 
 /*======== MEDIAS QUERIES ========*/
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .models-grid {
         grid-template-columns: 1fr 1fr;
     }
 
     .card-featured {
         grid-column: 1 / -1;
+    }
+
+    .story {
+        padding: 60px 0 150px 0;
+    }
+
+    .story-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .story-text h2 {
+        font-size: clamp(2rem, 12vw, 3.5rem);
+    }
+
+    .story-text p {
+        width: 90vw;
+    }
+
+    .story-visual {
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .story-visual img {
+        width: 100%;
+    }
+
+    .story-card-float {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 16px 24px;
+        background-color: #c9a84c;
+    }
+
+    .story-card-float strong {
+        display: inline;
+        font-size: clamp(1rem, 5vw, 4rem);
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+    .story-card-float span {
+        font-size: clamp(0.55rem, 2vw, 1rem);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        white-space: nowrap;
     }
 }
 
@@ -532,7 +657,7 @@ button.hamburger img:hover {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
     .models-grid {
         grid-template-columns: 1fr;
     }
