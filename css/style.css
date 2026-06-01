@@ -11,17 +11,17 @@ html {
 
 body {
     background-color: #0a0a0a;
-    background: repeating-linear-gradient(
-        90deg,
-        transparent,
-        transparent 79px,
-        rgba(201, 168, 76, 0.04) 80px
-    ), #0a0a0a;
+    background: repeating-linear-gradient(90deg,
+            transparent,
+            transparent 79px,
+            rgba(201, 168, 76, 0.04) 80px), #0a0a0a;
     font-family: "bebas neue", sans-serif;
     font-weight: 300;
 }
 
-a {text-decoration: none;}
+a {
+    text-decoration: none;
+}
 
 .container {
     width: 93%;
@@ -29,22 +29,18 @@ a {text-decoration: none;}
 }
 
 /*======== NAVIGATION ========*/
-header{
+header {
     position: fixed;
     width: 100%;
     height: 80px;
     top: 0;
     left: 0;
     z-index: 100;
-    background: linear-gradient(
-        to bottom,
-        rgba(10, 10, 10, 0.95),
-        transparent
-    );
+    background: linear-gradient(180deg, rgba(10, 10, 10, 1) 0%, rgba(10, 10, 10, 0.95) 50%, rgba(10, 10, 10, 0) 100%);
 }
 
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -159,7 +155,7 @@ button.hamburger img:hover {
     margin-top: 20px;
 }
 
-.hero-text h1 em{
+.hero-text h1 em {
     color: #c9a84c;
 }
 
@@ -176,7 +172,7 @@ button.hamburger img:hover {
     margin-top: 10px;
 }
 
-.hero-btns a{
+.hero-btns a {
     display: inline-block;
     border: 1px solid white;
     padding: clamp(8px, 2vw, 20px) clamp(12px, 3vw, 35px);
@@ -211,9 +207,22 @@ button.hamburger img:hover {
 }
 
 @keyframes scrollLine {
-    0%   { opacity: 0; transform: scaleY(0); transform-origin: top; }
-    50%  { opacity: 1; transform: scaleY(1); }
-    100% { opacity: 0; transform: scaleY(1); transform-origin: bottom; }
+    0% {
+        opacity: 0;
+        transform: scaleY(0);
+        transform-origin: top;
+    }
+
+    50% {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scaleY(1);
+        transform-origin: bottom;
+    }
 }
 
 .hero-scroll {
@@ -222,7 +231,7 @@ button.hamburger img:hover {
     bottom: 20px;
 }
 
-.hero-scroll span{
+.hero-scroll span {
     display: block;
     width: 1px;
     height: 70px;
@@ -239,7 +248,7 @@ button.hamburger img:hover {
     text-align: center;
 }
 
-.hero-badge strong{
+.hero-badge strong {
     display: block;
     font-family: "Bebas Neue", sans-serif;
     font-size: clamp(1.5rem, 3vw, 3rem);
@@ -483,6 +492,7 @@ button.hamburger img:hover {
 .models-cta {
     text-align: center;
 }
+
 /*======== STORY ========*/
 .story {
     width: 100%;
@@ -555,7 +565,7 @@ button.hamburger img:hover {
     bottom: -3rem;
     left: -3rem;
     color: black;
-    width: 30%;
+    width: 28%;
     padding: 10px 0 15px 0;
     background-color: #c9a84c;
     text-align: center;
@@ -569,10 +579,113 @@ button.hamburger img:hover {
 
 .story-card-float span {
     font-family: "barlow", sans-serif;
-    font-size: clamp( 0.5rem, 0.8vw, 0.75rem);
+    font-size: clamp(0.5rem, 0.8vw, 0.75rem);
     letter-spacing: 2px;
     text-transform: uppercase;
     line-height: 1.5;
+}
+
+/*======== TESTIMONIALS ========*/
+.testimonials {
+    padding: 100px 0;
+}
+
+.testimonials-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.testimonials-header span {
+    display: block;
+    font-family: "Barlow", sans-serif;
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: #c9a84c;
+    margin-bottom: 12px;
+}
+
+.testimonials-header h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    letter-spacing: 2px;
+    color: white;
+}
+
+.testimonials-header h2 em {
+    font-style: italic;
+    color: #c9a84c;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+}
+
+.test-card {
+    background: #1a1a1a;
+    padding: 40px;
+    border-top: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.test-card:hover {
+    border-top-color: #7a5f28;
+}
+
+.test-card-highlight {
+    border-top-color: #c9a84c;
+}
+
+.test-stars {
+    color: #c9a84c;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.test-card p {
+    font-family: "Barlow", sans-serif;
+    font-size: 0.9rem;
+    color: #cccccc;
+    line-height: 1.8;
+    margin-bottom: 28px;
+    font-style: italic;
+}
+
+.test-author {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #7a5f28;
+    color: #c9a84c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.test-author strong {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: white;
+    font-family: "Barlow", sans-serif;
+}
+
+.test-author span {
+    font-size: 0.75rem;
+    color: #c9a84c;
+    letter-spacing: 1px;
+    font-family: "Barlow", sans-serif;
 }
 
 /*======== MEDIAS QUERIES ========*/
@@ -642,7 +755,7 @@ button.hamburger img:hover {
 }
 
 @media (max-width: 768px) {
-    .navbar ul{
+    .navbar ul {
         display: none;
     }
 
@@ -654,6 +767,10 @@ button.hamburger img:hover {
         bottom: -70px;
         font-size: 280px;
         transition: 1s ease;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
     }
 }
 
