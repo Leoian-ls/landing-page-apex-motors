@@ -742,6 +742,7 @@ button.hamburger img:hover {
 
 .contacts-form form input,
 .contacts-form form select {
+    letter-spacing: 1px;
     color: #888;
     outline: none;
     background-color: #222222;
@@ -763,6 +764,25 @@ button.hamburger img:hover {
 
 .contacts-form form select option {
     color: white;
+}
+
+.contacts-form form textarea {
+    font-family: "barlow", sans-serif;
+    font-size: 0.98rem;
+    background-color: #222222;
+    outline: none;
+    border: 1px solid transparent;
+    padding: 14px 18px;
+    letter-spacing: 0.5px;
+    color: #888;
+    resize: none;
+    width: 100%;
+    height: 150px;
+    transition: border-color 0.3s;
+}
+
+.contacts-form form textarea:focus {
+    border-color: #7a5f28
 }
 
 .btn-contacts {
