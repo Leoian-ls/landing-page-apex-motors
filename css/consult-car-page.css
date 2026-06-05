@@ -1,0 +1,184 @@
+/*======== CAR HERO ========*/
+.car-hero {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.car-hero-img {
+    width: 100%;
+    height: 100%;
+}
+
+.car-hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.5);
+}
+
+.car-hero-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 0;
+    background: linear-gradient(to top, rgba(10,10,10,1), transparent);
+}
+
+.car-tag {
+    font-family: "Barlow", sans-serif;
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: #c9a84c;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.car-hero-overlay h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(3rem, 8vw, 7rem);
+    color: white;
+    letter-spacing: 3px;
+    line-height: 1;
+}
+
+.car-price-hero {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    color: #c9a84c;
+    letter-spacing: 2px;
+    margin-top: 8px;
+}
+
+/*======== CAR CONTENT ========*/
+.car-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    padding: 80px 0 100px;
+    align-items: start;
+}
+
+.section-tag {
+    font-family: "Barlow", sans-serif;
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: #c9a84c;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.car-details h2,
+.car-contact h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 32px;
+}
+
+.car-details h2 em,
+.car-contact h2 em {
+    color: #c9a84c;
+    font-style: italic;
+}
+
+.car-specs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin-bottom: 40px;
+}
+
+.car-spec-item {
+    background: #1a1a1a;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.car-spec-item span {
+    font-family: "Barlow", sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    color: #888;
+    text-transform: uppercase;
+}
+
+.car-spec-item strong {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.4rem;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.car-description {
+    font-family: "Barlow", sans-serif;
+    font-size: 0.95rem;
+    color: #cccccc;
+    line-height: 1.8;
+}
+
+/*======== CAR FORM ========*/
+.car-contact p {
+    font-family: "Barlow", sans-serif;
+    font-size: 0.95rem;
+    color: #888;
+    margin-bottom: 28px;
+}
+
+.car-form {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.car-form label {
+    font-family: "Barlow", sans-serif;
+    font-size: 0.85rem;
+    color: #cccccc;
+    letter-spacing: 1px;
+    margin-top: 16px;
+}
+
+.car-form input,
+.car-form textarea {
+    background: #1a1a1a;
+    border: 1px solid transparent;
+    color: white;
+    font-family: "Barlow", sans-serif;
+    font-size: 0.9rem;
+    padding: 14px 18px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    resize: vertical;
+}
+
+.car-form input::placeholder,
+.car-form textarea::placeholder {
+    color: #555;
+}
+
+.car-form input:focus,
+.car-form textarea:focus {
+    border-color: #7a5f28;
+}
+
+/*======== MEDIAS QUERIES ========*/
+@media (max-width: 768px) {
+    .car-content {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .car-specs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar ul {
+        display: none;
+    }
+}
