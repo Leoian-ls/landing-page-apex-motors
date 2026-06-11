@@ -24,7 +24,7 @@
     left: 0;
     width: 100%;
     padding: 60px 0;
-    background: linear-gradient(to top, rgba(10,10,10,1) 0%, transparent 100%);
+    background: linear-gradient(to top, rgba(10, 10, 10, 1) 0%, transparent 100%);
 }
 
 .page-tag {
@@ -238,12 +238,12 @@
     margin-top: 60px;
 }
 
-.visit-map > .section-tag {
+.visit-map .section-tag {
     text-align: left;
     display: block;
 }
 
-.visit-map > h2 {
+.visit-map h2 {
     text-align: left;
     margin-bottom: 24px;
 }
@@ -288,9 +288,14 @@
     gap: 16px;
 }
 
+.map-col h2,
+.showroom-col h2 {
+    margin-top: 50px;
+}
+
 /*======== MEDIA QUERIES ========*/
 @media (max-width: 900px) {
-    .visit-content > .container {
+    .visit-content>.container {
         grid-template-columns: 1fr;
         gap: 60px;
     }
