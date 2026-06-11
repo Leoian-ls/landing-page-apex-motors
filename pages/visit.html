@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Agendar Visita — APEX Motors</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/visit-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;1,300&family=Bebas+Neue&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar container">
+            <a href="../index.html" class="logo">APEX <span>MOTORS</span></a>
+            <ul>
+                <li><a href="../index.html#models">Modelos</a></li>
+                <li><a href="../index.html#story">História</a></li>
+                <li><a href="../index.html#testimonials">Clientes</a></li>
+                <li><a href="../index.html#contacts" class="btn-fale-conosco">Fale Conosco</a></li>
+            </ul>
+            <button class="hamburger"><img src="../assets/icons/hamburguer.png" alt="menu"></button>
+        </nav>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="page-hero-img">
+            <img src="../assets/showroom-apex.png" alt="APEX Motors Showroom">
+        </div>
+        <div class="page-hero-overlay">
+            <div class="container">
+                <span class="page-tag">// Showroom</span>
+                <h1>Agende sua <em>Visita</em></h1>
+                <p>Venha conhecer pessoalmente nossa coleção de veículos especiais. Nossa equipe está pronta para te
+                    receber.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISIT CONTENT -->
+    <section class="visit-content">
+        <div class="container">
+
+            <!-- FORMULÁRIO -->
+            <div class="visit-form-wrap">
+                <span class="section-tag">// Agendamento</span>
+                <h2>Escolha o melhor <em>horário</em></h2>
+                <p class="visit-subtitle">Preencha o formulário e confirmaremos sua visita em até 2 horas.</p>
+
+                <form action="" class="visit-form">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" name="name" placeholder="Seu nome completo">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="Seu e-mail">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="tel">Telefone</label>
+                            <input type="tel" id="tel" name="tel" placeholder="(00) 00000-0000">
+                        </div>
+                        <div class="form-group">
+                            <label for="model">Modelo de interesse</label>
+                            <select id="model" name="model">
+                                <option value="" disabled selected>Selecione um modelo</option>
+                                <option value="porsche">Porsche 911 GT3 RS</option>
+                                <option value="ferrari">Ferrari Roma Spider</option>
+                                <option value="lamborghini">Lamborghini Huracán EVO</option>
+                                <option value="outro">Outro / Sem preferência</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Data preferida</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Horário preferido</label>
+                            <select id="time" name="time">
+                                <option value="" disabled selected>Selecione um horário</option>
+                                <option value="09:00">09:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="13:00">13:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                                <option value="18:00">18:00</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Observações</label>
+                        <textarea id="message" name="message" rows="4"
+                            placeholder="Alguma dúvida ou informação adicional?"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-contacts">Confirmar agendamento</button>
+                </form>
+            </div>
+
+            <!-- INFORMAÇÕES -->
+            <div class="visit-info">
+
+                <div class="info-card">
+                    <span class="section-tag">// Nos Encontre</span>
+                    <h2>Como <em>Chegar</em></h2>
+                    <div class="info-details">
+                        <div class="info-detail-item">
+                            <span class="info-icon">📍</span>
+                            <div>
+                                <strong>Endereço</strong>
+                                <p>Av. das Nações, 1200<br>São Paulo — SP, 01310-100</p>
+                            </div>
+                        </div>
+                        <div class="info-detail-item">
+                            <span class="info-icon">📞</span>
+                            <div>
+                                <strong>Telefone</strong>
+                                <p>(11) 99999-0000</p>
+                            </div>
+                        </div>
+                        <div class="info-detail-item">
+                            <span class="info-icon">📧</span>
+                            <div>
+                                <strong>E-mail</strong>
+                                <p>contato@apexmotors.com.br</p>
+                            </div>
+                        </div>
+                        <div class="info-detail-item">
+                            <span class="info-icon">🕐</span>
+                            <div>
+                                <strong>Horário de Funcionamento</strong>
+                                <p>Segunda a Sexta: 9h às 19h<br>Sábado: 9h às 14h<br>Domingo: Fechado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <span class="section-tag">// Sua Visita</span>
+                    <h2>O que te <em>espera</em></h2>
+                    <ul class="visit-list">
+                        <li><span>✦</span> Test drive com acompanhamento especializado</li>
+                        <li><span>✦</span> Apresentação técnica detalhada do veículo</li>
+                        <li><span>✦</span> Simulação de financiamento na hora</li>
+                        <li><span>✦</span> Atendimento exclusivo e sem pressão</li>
+                        <li><span>✦</span> Café e ambiente premium no showroom</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- MAPA -->
+        <div class="visit-map">
+            <div class="container">
+                <div class="map-showroom-grid">
+
+                    <div class="map-col">
+                        <h2>Nossa <em>Localização</em></h2>
+                        <div class="map-wrap">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2112.398340423291!2d-46.606864856329715!3d-23.57864258754268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1780365361685!5m2!1spt-BR!2sbr"
+                                width="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="showroom-col">
+                        <h2>Nosso <em>Showroom</em></h2>
+                        <div class="showroom-wrap">
+                            <img src="../assets/showroom/showroom-apex.png" alt="APEX Motors Showroom">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-top">
+            <a href="../index.html" class="logo">APEX <span>MOTORS</span></a>
+            <ul class="footer-links">
+                <li><a href="../index.html#models">Modelos</a></li>
+                <li><a href="../index.html#story">História</a></li>
+                <li><a href="../index.html#contacts">Contato</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 APEX Motors. Todos os direitos reservados.</p>
+            <p>Projeto de estudo — Front-End</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
