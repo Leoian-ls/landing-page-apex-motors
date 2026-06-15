@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Catálogo — APEX Motors</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/car-catalog-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;1,300&family=Bebas+Neue&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar container">
+            <a href="../index.html" class="logo">APEX <span>MOTORS</span></a>
+            <ul>
+                <li><a href="../index.html#models">Modelos</a></li>
+                <li><a href="../index.html#story">História</a></li>
+                <li><a href="../index.html#testimonials">Clientes</a></li>
+                <li><a href="../index.html#contacts" class="btn-fale-conosco">Fale Conosco</a></li>
+            </ul>
+            <button class="hamburger"><img src="../assets/icons/hamburguer.png" alt="menu"></button>
+        </nav>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="page-hero-overlay">
+            <div class="container">
+                <span class="page-tag">// Coleção 2026</span>
+                <h1>Catálogo <em>Completo</em></h1>
+                <p>Explore nossa coleção exclusiva de veículos especiais selecionados com rigor.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FILTERS -->
+    <section class="catalog-filters">
+        <div class="container">
+
+            <div class="filter-group">
+                <span class="filter-label">Marca</span>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Todas</button>
+                    <button class="filter-btn" data-filter="porsche">Porsche</button>
+                    <button class="filter-btn" data-filter="ferrari">Ferrari</button>
+                    <button class="filter-btn" data-filter="lamborghini">Lamborghini</button>
+                    <button class="filter-btn" data-filter="mclaren">McLaren</button>
+                    <button class="filter-btn" data-filter="aston">Aston Martin</button>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <span class="filter-label">Preço</span>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="ate-2m">Até R$2M</button>
+                    <button class="filter-btn" data-filter="2m-4m">R$2M – R$4M</button>
+                    <button class="filter-btn" data-filter="acima-4m">Acima de R$4M</button>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <span class="filter-label">Tipo</span>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="coupe">Cupê</button>
+                    <button class="filter-btn" data-filter="spider">Spider</button>
+                    <button class="filter-btn" data-filter="suv">SUV</button>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <span class="filter-label">Ordenar por</span>
+                <div class="filter-buttons">
+                    <button class="filter-btn active">Padrão</button>
+                    <button class="filter-btn">Menor preço</button>
+                    <button class="filter-btn">Maior preço</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CATALOG GRID -->
+    <section class="catalog-section">
+        <div class="container">
+            <p class="catalog-count">20 veículos encontrados</p>
+            <div class="catalog-grid">
+
+                <!-- 1 -->
+                <article class="car-card">
+                    <div class="car-img-wrap">
+                        <div class="car-img car-img-1"></div>
+                        <span class="car-badge">Destaque</span>
+                    </div>
+                    <div class="car-info">
+                        <span class="car-brand">Porsche</span>
+                        <h3 class="car-name">911 GT3 RS</h3>
+                        <p class="car-desc">4.0L flat-six atmosférico. 525 cv. O esporte em sua forma mais pura.</p>
+                        <div class="car-specs">
+                            <div class="spec"><span>0-100</span><strong>3.2s</strong></div>
+                            <div class="spec"><span>Potência</span><strong>525cv</strong></div>
+                            <div class="spec"><span>V.máx</span><strong>296km/h</strong></div>
+                        </div>
+                        <div class="car-footer">
+                            <span class="car-price">R$ 2.890.000</span>
+                            <a href="porsche-911.html" class="btn-card">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2 -->
+                <article class="car-card">
+                    <div class="car-img-wrap">
+                        <div class="car-img car-img-2"></div>
+                        <span class="car-badge car-badge-new">Novo</span>
+                    </div>
+                    <div class="car-info">
+                        <span class="car-brand">Ferrari</span>
+                        <h3 class="car-name">Roma Spider</h3>
+                        <p class="car-desc">Elegância italiana sob o céu aberto. 620 cv de puro temperamento.</p>
+                        <div class="car-specs">
+                            <div class="spec"><span>0-100</span><strong>3.4s</strong></div>
+                            <div class="spec"><span>Potência</span><strong>620cv</strong></div>
+                            <div class="spec"><span>V.máx</span><strong>320km/h</strong></div>
+                        </div>
+                        <div class="car-footer">
+                            <span class="car-price">R$ 3.750.000</span>
+                            <a href="ferrari-roma.html" class="btn-card">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 3 -->
+                <article class="car-card">
+                    <div class="car-img-wrap">
+                        <div class="car-img car-img-3"></div>
+                    </div>
+                    <div class="car-info">
+                        <span class="car-brand">Lamborghini</span>
+                        <h3 class="car-name">Huracán EVO</h3>
+                        <p class="car-desc">V10 naturalmente aspirado. 640 cv. Uma obra de arte em movimento.</p>
+                        <div class="car-specs">
+                            <div class="spec"><span>0-100</span><strong>2.9s</strong></div>
+                            <div class="spec"><span>Potência</span><strong>640cv</strong></div>
+                            <div class="spec"><span>V.máx</span><strong>325km/h</strong></div>
+                        </div>
+                        <div class="car-footer">
+                            <span class="car-price">R$ 4.200.000</span>
+                            <a href="lamborghini-huracan.html" class="btn-card">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 4 -->
+                <article class="car-card">
+                    <div class="car-img-wrap">
+                        <div class="car-img car-img-4"></div>
+                    </div>
+                    <div class="car-info">
+                        <span class="car-brand">McLaren</span>
+                        <h3 class="car-name">720S</h3>
+                        <p class="car-desc">4.0L V8 biturbo. 720 cv. Aerodinâmica ativa de Fórmula 1.</p>
+                        <div class="car-specs">
+                            <div class="spec"><span>0-100</span><strong>2.9s</strong></div>
+                            <div class="spec"><span>Potência</span><strong>720cv</strong></div>
+                            <div class="spec"><span>V.máx</span><strong>341km/h</strong></div>
+                        </div>
+                        <div class="car-footer">
+                            <span class="car-price">R$ 3.500.000</span>
+                            <a href="#" class="btn-card">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 5 -->
+                <article class="car-card">
+                    <div class="car-img-wrap">
+                        <div class="car-img car-img-5"></div>
+                    </div>
+                    <div class="car-info">
+                        <span class="car-brand">Aston Martin</span>
+                        <h3 class="car-name">Vantage</h3>
+                        <p class="car-desc">4.0L V8 biturbo. 510 cv. Elegância britânica com alma esportiva.</p>
+                        <div class="car-specs">
+                            <div class="spec"><span>0-100</span><strong>3.5s</strong></div>
+                            <div class="spec"><span>Potência</span><strong>510cv</strong></div>
+                            <div class="spec"><span>V.máx</span><strong>314km/h</strong></div>
+                        </div>
+                        <div class="car-footer">
+                            <span class="car-price">R$ 2.100.000</span>
+                            <a href="#" class="btn-card">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 6 -->
+                <article class="car-card">
+                    <div class="car-img-wrap">
+                        <div class="car-img car-img-6"></div>
+                    </div>
+                    <div class="car-info">
+                        <span class="car-brand">Porsche</span>
+                        <h3 class="car-name">718 Cayman GT4</h3>
+                        <p class="car-desc">4.0L flat-six. 420 cv. Pureza de pilotagem em estado bruto.</p>
+                        <div class="car-specs">
+                            <div class="spec"><span>0-100</span><strong>4.4s</strong></div>
+                            <div class="spec"><span>Potência</span><strong>420cv</strong></div>
+                            <div class="spec"><span>V.máx</span><strong>304km/h</strong></div>
+                        </div>
+                        <div class="car-footer">
+                            <span class="car-price">R$ 1.890.000</span>
+                            <a href="#" class="btn-card">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 7 -->
+                <article class="car-card">
+                    <div class="car-img-wrap">
+                        <div class="car-img car-img-7"></div>
+                        <span class="car-badge car-badge-new">Novo</span>
+                    </div>
+                    <div class="car-info">
+                        <span class="car-brand">Ferrari</span>
+                        <h3 class="car-name">F8 Tributo</h3>
+                        <p class="car-desc">3.9L V8 biturbo. 720 cv. Homenagem ao melhor motor V8 da história.</p>
+                        <div class="car-specs">
+                            <div class="spec"><span>0-100</span><strong>2.9s</strong></div>
+                            <div class="spec"><span>Potência</span><strong>720cv</strong></div>
+                            <div class="spec"><span>V.máx</span><strong>340km/h</strong></div>
+                        </div>
+                        <div class="car-footer">
+                            <span class="car-price">R$ 4.500.000</span>
+                            <a href="#" class="btn-card">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 8 -->
+                <article class="car-card">
+                    <div class="car-img-wrap">
+                        <div class="car-img car-img-8"></div>
+                    </div>
+                    <div class="car-info">
+                        <span class="car-brand">Lamborghini</span>
+                        <h3 class="car-name">Urus</h3>
+                        <p class="car-desc">4.0L V8 biturbo. 650 cv. O SUV mais rápido do mundo.</p>
+                        <div class="car-specs">
+                            <div class="spec"><span>0-100</span><strong>3.6s</strong></div>
+                            <div class="spec"><span>Potência</span><strong>650cv</strong></div>
+                            <div class="spec"><span>V.máx</span><strong>305km/h</strong></div>
+                        </div>
+                        <div class="car-footer">
+                            <span class="car-price">R$ 2.800.000</span>
+                            <a href="#" class="btn-card">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 9 -->
+                <article class="car-card">
+                    <div class="car-img-wrap">
+                        <div class="car-img car-img-9"></div>
+                    </div>
+                    <div class="car-info">
+                        <span class="car-brand">McLaren</span>
+                        <h3 class="car-name">Artura</h3>
+                        <p class="car-desc">3.0L V6 híbrido. 680 cv. O futuro da performance McLaren.</p>
+                        <div class="car-specs">
+                            <div class="spec"><span>0-100</span><strong>3.0s</strong></div>
+                            <div class="spec"><span>Potência</span><strong>680cv</strong></div>
+                            <div class="spec"><span>V.máx</span><strong>330km/h</strong></div>
+                        </div>
+                        <div class="car-footer">
+                            <span class="car-price">R$ 2.600.000</span>
+                            <a href="#" class="btn-card">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 10 -->
+                <article class="car-card">
+                    <div class="car-img-wrap">
+                        <div class="car-img car-img-10"></div>
+                    </div>
+                    <div class="car-info">
+                        <span class="car-brand">Aston Martin</span>
+                        <h3 class="car-name">DB11</h3>
+                        <p class="car-desc">5.2L V12 biturbo. 630 cv. Gran Turismo na sua forma mais refinada.</p>
+                        <div class="car-specs">
+                            <div class="spec"><span>0-100</span><strong>3.7s</strong></div>
+                            <div class="spec"><span>Potência</span><strong>630cv</strong></div>
+                            <div class="spec"><span>V.máx</span><strong>334km/h</strong></div>
+                        </div>
+                        <div class="car-footer">
+                            <span class="car-price">R$ 2.400.000</span>
+                            <a href="#" class="btn-card">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 11 -->
+                <article class="car-card">
+                    <div class="car-img-wrap">
+                        <div class="car-img car-img-11"></div>
+                    </div>
+                    <div class="car-info">
+                        <span class="car-brand">Porsche</span>
+                        <h3 class="car-name">Panamera Turbo</h3>
+                        <p class="car-desc">4.0L V8 biturbo. 630 cv. O sedan esportivo definitivo.</p>
+                        <div class="car-specs">
+                            <div class="spec"><span>0-100</span><strong>3.4s</strong></div>
+                            <div class="spec"><span>Potência</span><strong>630cv</strong></div>
+                            <div class="spec"><span>V.máx</span><strong>306km/h</strong></div>
+                        </div>
+                        <div class="car-footer">
+                            <span class="car-price">R$ 1.700.000</span>
+                            <a href="#" class="btn-card">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 12 -->
+                <article class="car-card">
+                    <div class="car-img-wrap">
+                        <div class="car-img car-img-12"></div>
+                        <span class="car-badge car-badge-new">Novo</span>
+                    </div>
+                    <div class="car-info">
+                        <span class="car-brand">Ferrari</span>
+                        <h3 class="car-name">Portofino M</h3>
+                        <p class="car-desc">3.9L V8 biturbo. 620 cv. Ferrari conversível para o dia a dia.</p>
+                        <div class="car-specs">
+                            <div class="spec"><span>0-100</span><strong>3.45s</strong></div>
+                            <div class="spec"><span>Potência</span><strong>620cv</strong></div>
+                            <div class="spec"><span>V.máx</span><strong>320km/h</strong></div>
+                        </div>
+                        <div class="car-footer">
+                            <span class="car-price">R$ 3.100.000</span>
+                            <a href="#" class="btn-card">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 13 -->
+                <article class="car-card">
+                    <div class="car-img-wrap">
+                        <div class="car-img car-img-13"></div>
+                        <span class="car-badge">Exclusivo</span>
+                    </div>
+                    <div class="car-info">
+                        <span class="car-brand">Lamborghini</span>
+                        <h3 class="car-name">Huracán STO</h3>
+                        <p class="car-desc">5.2L V10. 640 cv. Tecnologia direta das 24h de Le Mans.</p>
+                        <div class="car-specs">
+                            <div class="spec"><span>0-100</span><strong>3.0s</strong></div>
+                            <div class="spec"><span>Potência</span><strong>640cv</strong></div>
+                            <div class="spec"><span>V.máx</span><strong>310km/h</strong></div>
+                        </div>
+                        <div class="car-footer">
+                            <span class="car-price">R$ 5.200.000</span>
+                            <a href="#" class="btn-card">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 14 -->
+                <article class="car-card">
+                    <div class="car-img-wrap">
+                        <div class="car-img car-img-14"></div>
+                    </div>
+                    <div class="car-info">
+                        <span class="car-brand">McLaren</span>
+                        <h3 class="car-name">GT</h3>
+                        <p class="car-desc">4.0L V8 biturbo. 620 cv. Gran Turismo com alma de supercar.</p>
+                        <div class="car-specs">
+                            <div class="spec"><span>0-100</span><strong>3.2s</strong></div>
+                            <div class="spec"><span>Potência</span><strong>620cv</strong></div>
+                            <div class="spec"><span>V.máx</span><strong>326km/h</strong></div>
+                        </div>
+                        <div class="car-footer">
+                            <span class="car-price">R$ 2.200.000</span>
+                            <a href="#" class="btn-card">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 15 -->
+                <article class="car-card">
+                    <div class="car-img-wrap">
+                        <div class="car-img car-img-15"></div>
+                    </div>
+                    <div class="car-info">
+                        <span class="car-brand">Porsche</span>
+                        <h3 class="car-name">Cayenne Turbo GT</h3>
+                        <p class="car-desc">4.0L V8 biturbo. 640 cv. O SUV mais extremo da Porsche.</p>
+                        <div class="car-specs">
+                            <div class="spec"><span>0-100</span><strong>3.3s</strong></div>
+                            <div class="spec"><span>Potência</span><strong>640cv</strong></div>
+                            <div class="spec"><span>V.máx</span><strong>300km/h</strong></div>
+                        </div>
+                        <div class="car-footer">
+                            <span class="car-price">R$ 1.500.000</span>
+                            <a href="#" class="btn-card">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 16 -->
+                <article class="car-card">
+                    <div class="car-img-wrap">
+                        <div class="car-img car-img-16"></div>
+                        <span class="car-badge car-badge-new">Novo</span>
+                    </div>
+                    <div class="car-info">
+                        <span class="car-brand">Ferrari</span>
+                        <h3 class="car-name">296 GTB</h3>
+                        <p class="car-desc">3.0L V6 híbrido. 830 cv. O futuro da Ferrari chegou.</p>
+                        <div class="car-specs">
+                            <div class="spec"><span>0-100</span><strong>2.9s</strong></div>
+                            <div class="spec"><span>Potência</span><strong>830cv</strong></div>
+                            <div class="spec"><span>V.máx</span><strong>330km/h</strong></div>
+                        </div>
+                        <div class="car-footer">
+                            <span class="car-price">R$ 3.900.000</span>
+                            <a href="#" class="btn-card">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 17 -->
+                <article class="car-card">
+                    <div class="car-img-wrap">
+                        <div class="car-img car-img-17"></div>
+                    </div>
+                    <div class="car-info">
+                        <span class="car-brand">Aston Martin</span>
+                        <h3 class="car-name">DBS</h3>
+                        <p class="car-desc">5.2L V12 biturbo. 725 cv. O Grand Tourer definitivo.</p>
+                        <div class="car-specs">
+                            <div class="spec"><span>0-100</span><strong>3.4s</strong></div>
+                            <div class="spec"><span>Potência</span><strong>725cv</strong></div>
+                            <div class="spec"><span>V.máx</span><strong>340km/h</strong></div>
+                        </div>
+                        <div class="car-footer">
+                            <span class="car-price">R$ 4.100.000</span>
+                            <a href="#" class="btn-card">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 18 -->
+                <article class="car-card">
+                    <div class="car-img-wrap">
+                        <div class="car-img car-img-18"></div>
+                        <span class="car-badge">Destaque</span>
+                    </div>
+                    <div class="car-info">
+                        <span class="car-brand">Porsche</span>
+                        <h3 class="car-name">911 Turbo S</h3>
+                        <p class="car-desc">3.8L flat-six biturbo. 650 cv. A referência absoluta em performance.</p>
+                        <div class="car-specs">
+                            <div class="spec"><span>0-100</span><strong>2.7s</strong></div>
+                            <div class="spec"><span>Potência</span><strong>650cv</strong></div>
+                            <div class="spec"><span>V.máx</span><strong>330km/h</strong></div>
+                        </div>
+                        <div class="car-footer">
+                            <span class="car-price">R$ 2.300.000</span>
+                            <a href="#" class="btn-card">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 19 -->
+                <article class="car-card">
+                    <div class="car-img-wrap">
+                        <div class="car-img car-img-19"></div>
+                    </div>
+                    <div class="car-info">
+                        <span class="car-brand">Lamborghini</span>
+                        <h3 class="car-name">Urus Performante</h3>
+                        <p class="car-desc">4.0L V8 biturbo. 666 cv. O SUV mais extremo de Sant'Agata.</p>
+                        <div class="car-specs">
+                            <div class="spec"><span>0-100</span><strong>3.3s</strong></div>
+                            <div class="spec"><span>Potência</span><strong>666cv</strong></div>
+                            <div class="spec"><span>V.máx</span><strong>306km/h</strong></div>
+                        </div>
+                        <div class="car-footer">
+                            <span class="car-price">R$ 3.300.000</span>
+                            <a href="#" class="btn-card">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 20 -->
+                <article class="car-card">
+                    <div class="car-img-wrap">
+                        <div class="car-img car-img-20"></div>
+                        <span class="car-badge">Exclusivo</span>
+                    </div>
+                    <div class="car-info">
+                        <span class="car-brand">McLaren</span>
+                        <h3 class="car-name">765LT</h3>
+                        <p class="car-desc">4.0L V8 biturbo. 765 cv. O McLaren mais extremo para estrada.</p>
+                        <div class="car-specs">
+                            <div class="spec"><span>0-100</span><strong>2.8s</strong></div>
+                            <div class="spec"><span>Potência</span><strong>765cv</strong></div>
+                            <div class="spec"><span>V.máx</span><strong>330km/h</strong></div>
+                        </div>
+                        <div class="car-footer">
+                            <span class="car-price">R$ 5.800.000</span>
+                            <a href="#" class="btn-card">Consultar</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-top">
+            <a href="../index.html" class="logo">APEX <span>MOTORS</span></a>
+            <ul class="footer-links">
+                <li><a href="../index.html#models">Modelos</a></li>
+                <li><a href="../index.html#story">História</a></li>
+                <li><a href="../index.html#contacts">Contato</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 APEX Motors. Todos os direitos reservados.</p>
+            <p>Projeto de estudo — Front-End</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
