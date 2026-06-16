@@ -339,6 +339,8 @@ button.hamburger img:hover {
 
 .car-card:hover {
     transform: translateY(-10px);
+    outline: 1.7px solid #7a5f28;
+    transition: outline 0.2s ease;
 }
 
 .car-img-wrap {
@@ -923,6 +925,14 @@ button.hamburger img:hover {
 
 /*======== MEDIAS QUERIES ========*/
 @media (max-width: 1000px) {
+    .navbar ul {
+        display: none;
+    }
+
+    button.hamburger {
+        display: block;
+    }
+
     .models-grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -989,14 +999,6 @@ button.hamburger img:hover {
 
 
 @media (max-width: 768px) {
-    .navbar ul {
-        display: none;
-    }
-
-    button.hamburger {
-        display: block;
-    }
-
     .hero::after {
         bottom: -70px;
         font-size: 280px;

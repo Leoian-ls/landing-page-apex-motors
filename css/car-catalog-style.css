@@ -40,9 +40,6 @@
     background: #111;
     border-bottom: 1px solid #222;
     padding: 32px 0;
-    position: sticky;
-    top: 80px;
-    z-index: 50;
 }
 
 .catalog-filters .container {
@@ -110,30 +107,8 @@
 .catalog-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 8px;
+    gap: 20px;
 }
-
-/* placeholder coloridos para os carros sem imagem */
-.car-img-1  { background: linear-gradient(135deg, #1a1208, #2d2010); }
-.car-img-2  { background: linear-gradient(135deg, #1a0808, #2d1010); }
-.car-img-3  { background: linear-gradient(135deg, #100a1a, #1e1030); }
-.car-img-4  { background: linear-gradient(135deg, #0a1018, #101828); }
-.car-img-5  { background: linear-gradient(135deg, #0f1208, #1a2010); }
-.car-img-6  { background: linear-gradient(135deg, #1a1208, #2d2010); }
-.car-img-7  { background: linear-gradient(135deg, #1a0808, #2d1010); }
-.car-img-8  { background: linear-gradient(135deg, #100a1a, #1e1030); }
-.car-img-9  { background: linear-gradient(135deg, #0a1018, #101828); }
-.car-img-10 { background: linear-gradient(135deg, #0f1208, #1a2010); }
-.car-img-11 { background: linear-gradient(135deg, #1a1208, #2d2010); }
-.car-img-12 { background: linear-gradient(135deg, #1a0808, #2d1010); }
-.car-img-13 { background: linear-gradient(135deg, #100a1a, #1e1030); }
-.car-img-14 { background: linear-gradient(135deg, #0a1018, #101828); }
-.car-img-15 { background: linear-gradient(135deg, #0f1208, #1a2010); }
-.car-img-16 { background: linear-gradient(135deg, #1a0808, #2d1010); }
-.car-img-17 { background: linear-gradient(135deg, #0f1208, #1a2010); }
-.car-img-18 { background: linear-gradient(135deg, #1a1208, #2d2010); }
-.car-img-19 { background: linear-gradient(135deg, #100a1a, #1e1030); }
-.car-img-20 { background: linear-gradient(135deg, #0a1018, #101828); }
 
 /*======== MEDIA QUERIES ========*/
 @media (max-width: 1200px) {
@@ -162,7 +137,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .catalog-grid {
         grid-template-columns: 1fr;
     }
