@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0a0a;
+    font-family: "Bebas Neue", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/*======== LINHAS DE FUNDO ========*/
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: repeating-linear-gradient(90deg,
+            transparent,
+            transparent 79px,
+            rgba(201, 168, 76, 0.04) 80px);
+    pointer-events: none;
+}
+
+/*======== LOGO ========*/
+.logo {
+    position: fixed;
+    top: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 4px;
+    color: white;
+    text-decoration: none;
+    z-index: 10;
+}
+
+.logo span {
+    color: #c9a84c;
+}
+
+/*======== NÚMERO 404 DE FUNDO ========*/
+.bg-number {
+    position: fixed;
+    font-size: clamp(200px, 40vw, 500px);
+    color: rgba(201, 168, 76, 0.04);
+    letter-spacing: -10px;
+    line-height: 1;
+    user-select: none;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+/*======== CONTEÚDO ========*/
+.content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 40px 24px;
+}
+
+.error-tag {
+    display: block;
+    font-family: "Barlow", sans-serif;
+    font-size: 16px;
+    letter-spacing: 4px;
+    color: #c9a84c;
+    margin-bottom: 60px;
+}
+
+.error-title {
+    font-size: clamp(4rem, 12vw, 10rem);
+    color: white;
+    line-height: 0.9;
+    letter-spacing: 3px;
+}
+
+.error-title em {
+    color: #c9a84c;
+    font-style: italic;
+}
+
+.error-divider {
+    width: 60px;
+    height: 1px;
+    background: #c9a84c;
+    margin: 32px auto;
+}
+
+.error-message {
+    font-family: "Barlow", sans-serif;
+    font-size: 1rem;
+    color: #888;
+    max-width: 420px;
+    line-height: 1.8;
+    font-weight: 300;
+    margin: 0 auto 40px;
+}
+
+.error-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*======== BOTÕES ========*/
+.btn-home {
+    display: inline-block;
+    background: #c9a84c;
+    color: #0a0a0a;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    padding: 14px 36px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-home:hover {
+    background: #F0D06E;
+    transform: translateY(-3px);
+}
+
+.btn-catalog {
+    display: inline-block;
+    border: 1px solid #7a5f28;
+    color: #c9a84c;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    padding: 14px 36px;
+    text-decoration: none;
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.btn-catalog:hover {
+    border-color: #c9a84c;
+    background: rgba(201, 168, 76, 0.08);
+}
+
+/*======== MEDIA QUERIES ========*/
+@media (max-width: 600px) {
+    .error-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-home,
+    .btn-catalog {
+        width: 100%;
+        text-align: center;
+    }
+}
