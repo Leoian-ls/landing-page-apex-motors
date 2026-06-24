@@ -306,10 +306,6 @@
         height: 60vh;
     }
 
-    .navbar ul {
-        display: none;
-    }
-
     .map-showroom-grid {
         grid-template-columns: 1fr;
     }
