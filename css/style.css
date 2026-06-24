@@ -16,6 +16,7 @@ body {
             rgba(201, 168, 76, 0.04) 80px), #0a0a0a;
     font-family: "bebas neue", sans-serif;
     font-weight: 300;
+    overflow-x: hidden;
 }
 
 a {
@@ -36,6 +37,7 @@ header {
     left: 0;
     z-index: 100;
     background: linear-gradient(180deg, rgba(10, 10, 10, 1) 0%, rgba(10, 10, 10, 0.95) 50%, rgba(10, 10, 10, 0) 100%);
+    overflow: visible;
 }
 
 
@@ -62,6 +64,10 @@ header {
     align-items: center;
     list-style: none;
     gap: 32px;
+}
+
+.btn-close-menu {
+    display: none;
 }
 
 .navbar ul li a {
@@ -880,7 +886,7 @@ button.hamburger img:hover {
     font-size: 25px;
 }
 
-.logo span{
+.logo span {
     color: #c9a84c;
 }
 
@@ -926,11 +932,92 @@ button.hamburger img:hover {
 /*======== MEDIAS QUERIES ========*/
 @media (max-width: 1000px) {
     .navbar ul {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 280px;
+        height: 100vh;
+        background: rgba(10, 10, 10, 0.98);
+        border-left: 1px solid #1a1a1a;
+        padding: 100px 0 20px;
+        gap: 0;
+        z-index: 98;
+        backdrop-filter: blur(10px);
+        transform: translateX(100%);
+        transition: transform 0.3s ease, visibility 0.3s ease;
+        visibility: hidden;
+    }
+
+    .navbar ul.menu-open {
+        transform: translateX(0);
+        visibility: visible;
+    }
+
+    .navbar ul li a {
+        margin-top: 20px;
+        padding: 14px 28px;
+        display: block;
+        border-bottom: 1px solid #111;
+        font-size: 13px;
+        letter-spacing: 2px;
+        color: #aaa;
+        transition: color 0.3s ease, padding-left 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+        color: #c9a84c;
+        padding-left: 36px;
+    }
+
+    .navbar ul li:last-child a {
+        border-bottom: none;
+        border: 1px solid #7a5f28;
+        color: #c9a84c;
+        margin: 40px 20px 0;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .navbar ul li:last-child a:hover {
+        background: #c9a84c;
+        color: black;
+        padding-left: 20px;
+    }
+
+    .navbar ul.no-transition {
+        transition: none !important;
+    }
+
+    .btn-close-menu {
+        display: block;
+        position: fixed;
+        top: 20px;
+        /* mesma altura do hambúrguer */
+        right: 40px;
+        /* mesmo lado direito */
+        background: #0a0a0a;
+        border: 2px solid #7a5f28;
+        border-radius: 50%;
+        color: #c9a84c;
+        font-size: 1rem;
+        width: 46px;
+        height: 46px;
+        cursor: pointer;
+        transition: background 0.3s, border-color 0.3s;
+        z-index: 102;
+    }
+
+    .btn-close-menu:hover {
+        background-color: #c9a84c;
+        border: 1.5px solid #c9a84c;
+        transition: 0.3s ease;
     }
 
     button.hamburger {
         display: block;
+        position: relative;
     }
 
     .models-grid {
