@@ -115,10 +115,10 @@ button.hamburger:hover {
 }
 
 button.hamburger img {
-    width: 30px;
+    width: 30px; 
 }
 
-button.hamburger img:hover {
+button.hamburger:hover img{
     filter: brightness(0.2);
 }
 
@@ -994,9 +994,7 @@ button.hamburger img:hover {
         display: block;
         position: fixed;
         top: 20px;
-        /* mesma altura do hambúrguer */
         right: 40px;
-        /* mesmo lado direito */
         background: #0a0a0a;
         border: 2px solid #7a5f28;
         border-radius: 50%;
@@ -1013,6 +1011,7 @@ button.hamburger img:hover {
         background-color: #c9a84c;
         border: 1.5px solid #c9a84c;
         transition: 0.3s ease;
+        color: #272727;
     }
 
     button.hamburger {

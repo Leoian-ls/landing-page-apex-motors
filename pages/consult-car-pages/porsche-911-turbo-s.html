@@ -34,6 +34,7 @@
     <section class="car-hero">
         <div class="car-hero-img">
             <img src="../../assets/cars/Porsche 911 Turbo S.png" alt="Porsche 911 Turbo S">
+            <button class="btn-fullscreen">⛶</button>
         </div>
         <div class="car-hero-overlay">
             <div class="container">
@@ -43,6 +44,27 @@
             </div>
         </div>
     </section>
+
+    <!-- Galeria oculta do Fullscreen -->
+    <div class="car-gallery" style="display: none;">
+        <img src="../../assets/cars/Porsche 911 Turbo S.png" alt="Porsche 911 Turbo S">
+        <img src="../../assets/cars/Porsche 911 Turbo S 2.jpg" alt="Porsche 911 Turbo S">
+        <img src="../../assets/cars/Porsche 911 Turbo S 3.webp" alt="Porsche 911 Turbo S">
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close">✕</button>
+            <button class="lightbox-prev"> < </button>
+            <img src="" alt="" class="lightbox-img">
+            <button class="lightbox-next"> > </button>
+            <div class="lightbox-counter">
+                <span class="lightbox-current">1</span> / <span class="lightbox-total">1</span>
+            </div>
+        </div>
+    </div>
 
     <section class="car-content container">
         <div class="car-details">
@@ -60,6 +82,7 @@
                 produção. Com 650 cv, tração integral e 0-100 km/h em apenas 2.7 segundos, ele continua sendo o
                 benchmark que todos os outros tentam superar.</p>
         </div>
+
         <div class="car-contact" id="car-contact">
             <span class="section-tag">// Interesse</span>
             <h2>Consultar <em>Veículo</em></h2>
@@ -95,6 +118,7 @@
     </footer>
 
     <script src="../../js/script.js"></script>
+    <script src="../../js/consult-car-page.js"></script>
 </body>
 
 </html>

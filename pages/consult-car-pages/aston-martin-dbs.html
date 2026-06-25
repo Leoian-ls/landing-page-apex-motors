@@ -34,6 +34,7 @@
     <section class="car-hero">
         <div class="car-hero-img">
             <img src="../../assets/cars/Aston Martin DBS.png" alt="Aston Martin DBS">
+            <button class="btn-fullscreen">⛶</button>
         </div>
         <div class="car-hero-overlay">
             <div class="container">
@@ -43,6 +44,27 @@
             </div>
         </div>
     </section>
+
+    <!-- Galeria oculta do Fullscreen -->
+    <div class="car-gallery" style="display: none;">
+        <img src="../../assets/cars/Aston Martin DBS.png" alt="Aston Martin DBS">
+        <img src="../../assets/cars/Aston Martin DBS 2.jpg" alt="Aston Martin DBS">
+        <img src="../../assets/cars/Aston Martin DBS 3.jpg" alt="Aston Martin DBS">
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close">✕</button>
+            <button class="lightbox-prev"> < </button>
+            <img src="" alt="" class="lightbox-img">
+            <button class="lightbox-next"> > </button>
+            <div class="lightbox-counter">
+                <span class="lightbox-current">1</span> / <span class="lightbox-total">1</span>
+            </div>
+        </div>
+    </div>
 
     <section class="car-content container">
         <div class="car-details">
@@ -93,8 +115,8 @@
             <p>Projeto de estudo — Front-End</p>
         </div>
     </footer>
-
     <script src="../../js/script.js"></script>
+    <script src="../../js/consult-car-page.js"></script>
 </body>
 
 </html>
