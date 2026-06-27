@@ -65,3 +65,39 @@ document.addEventListener('keydown', function(e) {
         updateLightbox();
     }
 });
+
+// ======== SLIDER HERO ========
+const slides = document.querySelectorAll('.car-hero-slider .slide');
+const dots = document.querySelectorAll('.slider-dots .dot');
+let slideIndex = 0;
+
+// atualiza slide e bolinha ativa
+function updateSlider() {
+    // remove active de todos
+    slides.forEach(slide => slide.classList.remove('active'));
+    dots.forEach(dot => dot.classList.remove('active'));
+
+    // adiciona active no atual
+    slides[slideIndex].classList.add('active');
+    dots[slideIndex].classList.add('active');
+}
+
+// botão próximo
+document.querySelector('.slider-next').addEventListener('click', function() {
+    slideIndex = (slideIndex + 1) % slides.length;
+    updateSlider();
+});
+
+// botão anterior
+document.querySelector('.slider-prev').addEventListener('click', function() {
+    slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+    updateSlider();
+});
+
+// clique nas bolinhas
+dots.forEach(function(dot, index) {
+    dot.addEventListener('click', function() {
+        slideIndex = index;
+        updateSlider();
+    });
+});
