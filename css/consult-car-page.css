@@ -37,7 +37,7 @@
 .btn-fullscreen {
     position: absolute;
     bottom: 16px;
-    right: 16px;
+    right: 32px;
     background: rgba(0, 0, 0, 0.267);
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -116,7 +116,7 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    width: 90%;
+    width: 80%;
     max-width: 1200px;
 }
 
@@ -129,8 +129,8 @@
 
 .lightbox-close {
     position: absolute;
-    top: -50px;
-    right: 0;
+    top: 0px;
+    right: -50px;
     background: none;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 5px;
@@ -146,17 +146,29 @@
     color: #c9a84c;
 }
 
+.lightbox-wrapp {
+    flex-direction: column;
+}
+
+.lightbox-wrapp2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
 .lightbox-prev,
 .lightbox-next {
     background: rgba(0, 0, 0, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 5px;
     color: white;
-    font-size: 1.2rem;
-    padding: 20px 14px;
+    font-size: clamp(0.8rem, 3vw, 1.5rem);
+    padding: clamp(8px, 3vw, 20px) clamp(6px, 3vw, 14px);
     cursor: pointer;
     transition: background 0.3s, border-color 0.3s;
     flex-shrink: 0;
+    margin: 20px;
 }
 
 .lightbox-prev:hover,
@@ -166,12 +178,10 @@
 }
 
 .lightbox-counter {
-    position: absolute;
-    bottom: -40px;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 50px;
     font-family: "Barlow", sans-serif;
-    font-size: 1.1rem;
+    font-size: clamp(0.8rem, 3vw, 1.2rem);
+    font-weight: bold;
     color: #888;
     letter-spacing: 2px;
 }
@@ -304,6 +314,13 @@
 }
 
 @media (max-width: 768px) {
+
+    .lightbox-close {
+        position: absolute;
+        top: -50px;
+        right: 0px;
+    }
+
     .car-content {
         grid-template-columns: 1fr;
         gap: 60px;
