@@ -67,7 +67,7 @@
                 <div class="filter-buttons">
                     <button class="filter-btn active" data-filter="all">Todos</button>
                     <button class="filter-btn" data-filter="ate-2m">Até R$2M</button>
-                    <button class="filter-btn" data-filter="2m-4m">R$2M – R$4M</button>
+                    <button class="filter-btn" data-filter="2m-4m">R$2M - R$4M</button>
                     <button class="filter-btn" data-filter="acima-4m">Acima de R$4M</button>
                 </div>
             </div>
@@ -94,6 +94,12 @@
         </div>
     </section>
 
+    <!-- SEARCH -->
+    <div class="catalog-search">
+        <input type="text" id="search-input" placeholder="Pesquisar por marca ou modelo...">
+        <button id="search-btn">🔍</button>
+    </div>
+
     <!-- CATALOG GRID -->
     <section class="catalog-section">
         <div class="container">
@@ -101,10 +107,10 @@
             <div class="catalog-grid">
 
                 <!-- 1 -->
-                <article class="car-card">
+                <article class="car-card" data-marca="porsche" data-preco="2m-4m" data-preco-num="2890000" data-tipo="coupe" data-ordem="1">
                     <div class="car-img-wrap">
-                        <div class="car-img car-img-1"><img src="../assets/cars/Porsche 911 GT3 RS.jpg"
-                                alt="Porsche 911 GT3 RS"></div>
+                        <div class="car-img"><img src="../assets/cars/Porsche 911 GT3 RS.jpg" alt="Porsche 911 GT3 RS">
+                        </div>
                         <span class="car-badge">Destaque</span>
                     </div>
                     <div class="car-info">
@@ -124,9 +130,9 @@
                 </article>
 
                 <!-- 2 -->
-                <article class="car-card">
+                <article class="car-card" data-marca="ferrari" data-preco="2m-4m" data-preco-num="3750000" data-tipo="spider" data-ordem="2">
                     <div class="car-img-wrap">
-                        <div class="car-img car-img-2"><img src="../assets/cars/Ferrari Roma Spider.jpg"
+                        <div class="car-img"><img src="../assets/cars/Ferrari Roma Spider.jpg"
                                 alt="Ferrari Roma Spider"></div>
                         <span class="car-badge car-badge-new">Novo</span>
                     </div>
@@ -147,9 +153,9 @@
                 </article>
 
                 <!-- 3 -->
-                <article class="car-card">
+                <article class="car-card" data-marca="lamborghini" data-preco="acima-4m" data-preco-num="4200000" data-tipo="coupe" data-ordem="3">
                     <div class="car-img-wrap">
-                        <div class="car-img car-img-3"><img src="../assets/cars/Lamborghini Huracán EVO.jpg"
+                        <div class="car-img"><img src="../assets/cars/Lamborghini Huracán EVO.jpg"
                                 alt="Lamborghini Huracán EVO"></div>
                     </div>
                     <div class="car-info">
@@ -169,10 +175,9 @@
                 </article>
 
                 <!-- 4 -->
-                <article class="car-card">
+                <article class="car-card" data-marca="mclaren" data-preco="2m-4m" data-preco-num="3500000" data-tipo="coupe" data-ordem="4">
                     <div class="car-img-wrap">
-                        <div class="car-img car-img-4"><img src="../assets/cars/McLaren 720S.png" alt="McLaren 720S">
-                        </div>
+                        <div class="car-img"><img src="../assets/cars/McLaren 720S.png" alt="McLaren 720S"></div>
                     </div>
                     <div class="car-info">
                         <span class="car-brand">McLaren</span>
@@ -191,9 +196,9 @@
                 </article>
 
                 <!-- 5 -->
-                <article class="car-card">
+                <article class="car-card" data-marca="aston" data-preco="2m-4m" data-preco-num="2100000" data-tipo="coupe" data-ordem="5">
                     <div class="car-img-wrap">
-                        <div class="car-img car-img-5"><img src="../assets/cars/Aston Martin Vantage.png"
+                        <div class="car-img"><img src="../assets/cars/Aston Martin Vantage.png"
                                 alt="Aston Martin Vantage"></div>
                     </div>
                     <div class="car-info">
@@ -213,9 +218,9 @@
                 </article>
 
                 <!-- 6 -->
-                <article class="car-card">
+                <article class="car-card" data-marca="porsche" data-preco="ate-2m" data-preco-num="1890000" data-tipo="coupe" data-ordem="6">
                     <div class="car-img-wrap">
-                        <div class="car-img car-img-6"><img src="../assets/cars/Porsche 718 Cayman GT4.png"
+                        <div class="car-img"><img src="../assets/cars/Porsche 718 Cayman GT4.png"
                                 alt="Porsche 718 Cayman GT4"></div>
                     </div>
                     <div class="car-info">
@@ -235,10 +240,10 @@
                 </article>
 
                 <!-- 7 -->
-                <article class="car-card">
+                <article class="car-card" data-marca="ferrari" data-preco="acima-4m" data-preco-num="4500000" data-tipo="coupe" data-ordem="7">
                     <div class="car-img-wrap">
-                        <div class="car-img car-img-7"><img src="../assets/cars/Ferrari F8 Tributo.png" alt="">Ferrari
-                            F8 Tributo</div>
+                        <div class="car-img"><img src="../assets/cars/Ferrari F8 Tributo.png" alt="Ferrari F8 Tributo">
+                        </div>
                         <span class="car-badge car-badge-new">Novo</span>
                     </div>
                     <div class="car-info">
@@ -258,10 +263,10 @@
                 </article>
 
                 <!-- 8 -->
-                <article class="car-card">
+                <article class="car-card" data-marca="lamborghini" data-preco="2m-4m" data-preco-num="2800000" data-tipo="suv" data-ordem="8">
                     <div class="car-img-wrap">
-                        <div class="car-img car-img-8"><img src="../assets/cars/Lamborghini Urus.png"
-                                alt="Lamborghini Urus"></div>
+                        <div class="car-img"><img src="../assets/cars/Lamborghini Urus.png" alt="Lamborghini Urus">
+                        </div>
                     </div>
                     <div class="car-info">
                         <span class="car-brand">Lamborghini</span>
@@ -280,10 +285,9 @@
                 </article>
 
                 <!-- 9 -->
-                <article class="car-card">
+                <article class="car-card" data-marca="mclaren" data-preco="2m-4m" data-preco-num="2600000" data-tipo="coupe" data-ordem="9">
                     <div class="car-img-wrap">
-                        <div class="car-img car-img-9"><img src="../assets/cars/McLaren Artura.png"
-                                alt="McLaren Artura"></div>
+                        <div class="car-img"><img src="../assets/cars/McLaren Artura.png" alt="McLaren Artura"></div>
                     </div>
                     <div class="car-info">
                         <span class="car-brand">McLaren</span>
@@ -302,10 +306,10 @@
                 </article>
 
                 <!-- 10 -->
-                <article class="car-card">
+                <article class="car-card" data-marca="aston" data-preco="2m-4m" data-preco-num="2400000" data-tipo="coupe" data-ordem="10">
                     <div class="car-img-wrap">
-                        <div class="car-img car-img-10"><img src="../assets/cars/Aston Martin DB11.png"
-                                alt="Aston Martin DB11"></div>
+                        <div class="car-img"><img src="../assets/cars/Aston Martin DB11.png" alt="Aston Martin DB11">
+                        </div>
                     </div>
                     <div class="car-info">
                         <span class="car-brand">Aston Martin</span>
@@ -324,9 +328,9 @@
                 </article>
 
                 <!-- 11 -->
-                <article class="car-card">
+                <article class="car-card" data-marca="porsche" data-preco="ate-2m" data-preco-num="1700000" data-tipo="coupe" data-ordem="11">
                     <div class="car-img-wrap">
-                        <div class="car-img car-img-11"><img src="../assets/cars/Porsche Panamera Turbo.png"
+                        <div class="car-img"><img src="../assets/cars/Porsche Panamera Turbo.png"
                                 alt="Porsche Panamera Turbo"></div>
                     </div>
                     <div class="car-info">
@@ -346,9 +350,9 @@
                 </article>
 
                 <!-- 12 -->
-                <article class="car-card">
+                <article class="car-card" data-marca="ferrari" data-preco="2m-4m" data-preco-num="3100000" data-tipo="spider" data-ordem="12">
                     <div class="car-img-wrap">
-                        <div class="car-img car-img-12"><img src="../assets/cars/Ferrari Portofino M.png"
+                        <div class="car-img"><img src="../assets/cars/Ferrari Portofino M.png"
                                 alt="Ferrari Portofino M"></div>
                         <span class="car-badge car-badge-new">Novo</span>
                     </div>
@@ -369,9 +373,9 @@
                 </article>
 
                 <!-- 13 -->
-                <article class="car-card">
+                <article class="car-card" data-marca="lamborghini" data-preco="acima-4m" data-preco-num="5200000" data-tipo="coupe" data-ordem="13">
                     <div class="car-img-wrap">
-                        <div class="car-img car-img-13"><img src="../assets/cars/Lamborghini Huracán STO.png"
+                        <div class="car-img"><img src="../assets/cars/Lamborghini Huracán STO.png"
                                 alt="Lamborghini Huracán STO"></div>
                         <span class="car-badge">Exclusivo</span>
                     </div>
@@ -392,9 +396,9 @@
                 </article>
 
                 <!-- 14 -->
-                <article class="car-card">
+                <article class="car-card" data-marca="mclaren" data-preco="2m-4m" data-preco-num="2200000" data-tipo="coupe" data-ordem="14">
                     <div class="car-img-wrap">
-                        <div class="car-img car-img-14"><img src="../assets/cars/McLaren GT.png" alt="McLaren GT"></div>
+                        <div class="car-img"><img src="../assets/cars/McLaren GT.png" alt="McLaren GT"></div>
                     </div>
                     <div class="car-info">
                         <span class="car-brand">McLaren</span>
@@ -413,9 +417,9 @@
                 </article>
 
                 <!-- 15 -->
-                <article class="car-card">
+                <article class="car-card" data-marca="porsche" data-preco="ate-2m" data-preco-num="1500000" data-tipo="suv" data-ordem="15">
                     <div class="car-img-wrap">
-                        <div class="car-img car-img-15"><img src="../assets/cars/Porsche Cayenne Turbo GT.png"
+                        <div class="car-img"><img src="../assets/cars/Porsche Cayenne Turbo GT.png"
                                 alt="Porsche Cayenne Turbo GT"></div>
                     </div>
                     <div class="car-info">
@@ -435,10 +439,9 @@
                 </article>
 
                 <!-- 16 -->
-                <article class="car-card">
+                <article class="car-card" data-marca="ferrari" data-preco="2m-4m" data-preco-num="3900000" data-tipo="coupe" data-ordem="16">
                     <div class="car-img-wrap">
-                        <div class="car-img car-img-16"><img src="../assets/cars/Ferrari 296 GTB.png"
-                                alt="Ferrari 296 GTB"></div>
+                        <div class="car-img"><img src="../assets/cars/Ferrari 296 GTB.png" alt="Ferrari 296 GTB"></div>
                         <span class="car-badge car-badge-new">Novo</span>
                     </div>
                     <div class="car-info">
@@ -458,10 +461,10 @@
                 </article>
 
                 <!-- 17 -->
-                <article class="car-card">
+                <article class="car-card" data-marca="aston" data-preco="acima-4m" data-preco-num="4100000" data-tipo="coupe" data-ordem="17">
                     <div class="car-img-wrap">
-                        <div class="car-img car-img-17"><img src="../assets/cars/Aston Martin DBS.png"
-                                alt="Aston Martin DBS"></div>
+                        <div class="car-img"><img src="../assets/cars/Aston Martin DBS.png" alt="Aston Martin DBS">
+                        </div>
                     </div>
                     <div class="car-info">
                         <span class="car-brand">Aston Martin</span>
@@ -480,9 +483,9 @@
                 </article>
 
                 <!-- 18 -->
-                <article class="car-card">
+                <article class="car-card" data-marca="porsche" data-preco="2m-4m" data-preco-num="2300000" data-tipo="coupe" data-ordem="18">
                     <div class="car-img-wrap">
-                        <div class="car-img car-img-18"><img src="../assets/cars/Porsche 911 Turbo S.png"
+                        <div class="car-img"><img src="../assets/cars/Porsche 911 Turbo S.png"
                                 alt="Porsche 911 Turbo S"></div>
                         <span class="car-badge">Destaque</span>
                     </div>
@@ -503,9 +506,9 @@
                 </article>
 
                 <!-- 19 -->
-                <article class="car-card">
+                <article class="car-card" data-marca="lamborghini" data-preco="2m-4m" data-preco-num="3300000" data-tipo="suv" data-ordem="19">
                     <div class="car-img-wrap">
-                        <div class="car-img car-img-19"><img src="../assets/cars/Lamborghini Urus Performante.png"
+                        <div class="car-img"><img src="../assets/cars/Lamborghini Urus Performante.png"
                                 alt="Lamborghini Urus Performante"></div>
                     </div>
                     <div class="car-info">
@@ -525,10 +528,9 @@
                 </article>
 
                 <!-- 20 -->
-                <article class="car-card">
+                <article class="car-card" data-marca="mclaren" data-preco="acima-4m" data-preco-num="5800000" data-tipo="coupe" data-ordem="20">
                     <div class="car-img-wrap">
-                        <div class="car-img car-img-20"><img src="../assets/cars/McLaren 765LT.png" alt="McLaren 765LT">
-                        </div>
+                        <div class="car-img"><img src="../assets/cars/McLaren 765LT.png" alt="McLaren 765LT"></div>
                         <span class="car-badge">Exclusivo</span>
                     </div>
                     <div class="car-info">
@@ -568,6 +570,7 @@
     </footer>
 
     <script src="../js/script.js"></script>
+    <script src="../js/car-catalog.js"></script>
 </body>
 
 </html>

@@ -387,13 +387,14 @@ button.hamburger:hover img{
     transform: translateY(-50%);
     background: rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 2.5px;
     color: white;
     font-size: 0.9rem;
     padding: 8px 12px;
     cursor: pointer;
     transition: background 0.3s, border-color 0.3s;
     z-index: 3;
-    opacity: 0; /* esconde por padrão */
+    opacity: 0; /* esconde por padrão os botões */
     transition: opacity 0.3s ease;
 }
 

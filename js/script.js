@@ -38,8 +38,6 @@ document.addEventListener('click', function(event) {
     }
 });
 
-
-//
 // ======== SLIDER DOS CARDS ========
 
 // pega TODOS os sliders da página
@@ -65,21 +63,18 @@ cardSliders.forEach(function(slider) {
         dots[currentIndex].classList.add('active');
     }
 
-    btnNext.addEventListener('click', function(event) {
-        event.stopPropagation(); // evita fechar o menu ao clicar
+    btnNext.addEventListener('click', function() {
         currentIndex = (currentIndex + 1) % slides.length;
         updateSlider();
     });
 
-    btnPrev.addEventListener('click', function(event) {
-        event.stopPropagation(); // evita fechar o menu ao clicar
+    btnPrev.addEventListener('click', function() {
         currentIndex = (currentIndex - 1 + slides.length) % slides.length;
         updateSlider();
     });
 
     dots.forEach(function(dot, index) {
-        dot.addEventListener('click', function(event) {
-            event.stopPropagation();
+        dot.addEventListener('click', function() {
             currentIndex = index;
             updateSlider();
         });
