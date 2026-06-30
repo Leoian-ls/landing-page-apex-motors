@@ -80,3 +80,18 @@ cardSliders.forEach(function(slider) {
         });
     });
 });
+
+// ======== BOTÃO VOLTAR AO TOPO ========
+const btnTop = document.getElementById('btn-top');
+
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 400) {
+        btnTop.classList.add('show');
+    } else {
+        btnTop.classList.remove('show');
+    }
+});
+
+btnTop.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
